@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json()); //req.body
 
 if (process.env.NODE_ENV === "production") {
-	app.use(express.static(path.join(__dirname, "client/build")));
+	app.use(express.static(path.join(__dirname, "quote-app-frontend/build")));
 }
 //routes
 
@@ -18,7 +18,7 @@ app.use("/admin", require("./routes/jwtauth"));
 app.use("/", require("./routes/quote"));
 
 app.get("*", (req, res) => {
-	res.sendFile(path.join(__dirname, "client/build/index.html"));
+	res.sendFile(path.join(__dirname, "quote-app-frontend/build/index.html"));
 });
 
 app.listen(PORT, () => {
