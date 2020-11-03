@@ -1,3 +1,6 @@
 [submodule "client"]
 	path = client
-	url = ./client
+	url = git@github.com:Pushpitha17/quote-app-frontend.git
+[submodule "quote-app-frontend"]
+	path = quote-app-frontend
+	url = git@github.com:Pushpitha17/quote-app-frontend.git
