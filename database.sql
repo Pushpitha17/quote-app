@@ -1,4 +1,4 @@
-CREATE DATABASE quotes
+-- CREATE DATABASE quotes
 
 --need extenstion
 create extension if not exists "uuid-ossp";
